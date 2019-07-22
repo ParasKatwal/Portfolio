@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400&display=swap');
+
+$color:(
+    primary: #050E22,
+    accent: #6b7f8e
+);
+
+@function color($colorName){
+    @return map-get($map: $color, $key: $colorName )
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-image: url(../img/port1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+
+    .hamburger-menu{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
+        color: color(accent);
+        z-index: 3;
+        overflow: hidden;
+        cursor: pointer;
+
+        .fa-bars{
+            border: 0.5px solid color(accent);
+            border-radius: 3px;
+            padding: 10px;
+            position: relative;
+        }
+        .fa-times{
+            display: none;
+            border: 0.5px solid color(accent);
+            border-radius: 3px;
+            padding: 10px 12.4px;
+        }
+        .fa-times.open{
+            display: block;
+        }
+        .fa-bars.open{
+            display: none;
+        }
+    }
+    .hamburger-menu::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, transparent, rgba(255,255,255, .3), transparent);
+        transition: all 650ms;
+    }
+    .hamburger-menu:hover::before{
+        left: 100%;
+    }
+    nav{
+        position: fixed;
+        z-index: 2;
+        opacity: 0;
+        transform: scale(0);
+        transition: opacity 650ms;
+        ul{
+            padding-top: 7%;
+            font-family: 'Black Ops One', cursive;
+            width: 100vw;
+            height: 100vh;
+            background-color: color(primary) !important;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                color: color(accent);
+                font-size: 50px;
+                padding: 10px;
+            }
+        }
+
+        .social-media{
+            margin-top: 5%;
+            color: color(accent);
+            width: 60%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            i{
+                padding: 15px;
+                transition: 0.5s;
+                border: 1px solid color(primary);
+            }
+            .fa-instagram:hover{
+                color: #e4405f;
+                border-radius: 50%;
+                border: 1px solid #e4405f;
+            }
+            .fa-facebook-square:hover{
+                color: #3b5999;
+                border-radius: 50%;
+                border: 1px solid #3b5999;
+            }
+            .fa-youtube:hover{
+                color: #cd201f;
+                border-radius: 50%;
+                border: 1px solid #cd201f;
+            }
+            .fa-linkedin:hover{
+                color: #0077B5;
+                border-radius: 50%;
+                border: 1px solid #0077B5;
+            }
+            .fa-github-square:hover{
+                color: #333;
+                border-radius: 50%;
+                border: 1px solid #333;
+            }
+        }
+    }
+    nav.open{
+        opacity: 1;
+        transform: scale(1);
+        animation: drop 1s ease forwards;
+    }
+}
+
+.about{
+    padding: 40px;
+    height: 100vh;
+    position: relative;
+    
+    .container{
+        width: 95%;
+        border: 1px solid color(accent);
+        border-radius: 7px;
+        height: 87vh;
+        overflow: hidden;
+    }
+    .title{
+        position: absolute;
+        top: 2px;
+        left: 130px;
+        background: white;
+        h5{
+            padding: 10px;
+            font-family: 'Merriweather', serif;
+            color: color(primary);
+        }
+    }
+    .about-me{
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        .text{
+            width: 40%;
+            p{
+                font-family: 'Merriweather', serif;
+                color: color(primary);
+                word-spacing: 3px;
+                letter-spacing: 1px;
+                font-weight: lighter;
+                padding-top: 30px;
+            }
+          
+        }
+        .image{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+
+    }
+
+}
+
+
+@keyframes drop{
+    0%{ transform: translateX(100%);
+        opacity: 0;
+    };
+}

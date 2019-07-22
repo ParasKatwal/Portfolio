@@ -1,0 +1,37 @@
+header{
+    background-image: url(../img/port3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+.about .about-me{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.about .about-me .text, .about .about-me .image{
+    width: 100%;
+}
+
+@media (max-width: 800px){
+  
+}
+@media (max-width: 450px){
+    header{
+        background-image: url(../img/port2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    header nav ul a{
+        font-size: 30px;
+    }
+    header nav .social-media{
+        width: 90%;
+        margin-top: 30%;
+    }
+}
