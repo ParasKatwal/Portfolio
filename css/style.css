@@ -197,10 +197,6 @@ header nav.open {
       justify-content: space-around;
 }
 
-.about .about-me .text {
-  width: 40%;
-}
-
 .about .about-me .text p {
   font-family: 'Merriweather', serif;
   color: #050E22;
@@ -210,12 +206,59 @@ header nav.open {
   padding-top: 30px;
 }
 
-.about .about-me .image {
-  width: 50%;
-}
-
 .about .about-me .image img {
   width: 100%;
+}
+
+.about .about-me .image .image2 {
+  display: none;
+}
+
+.skills {
+  background-image: url(../img/skillbg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  height: 100vh;
+  position: relative;
+}
+
+.skills .container {
+  width: 95%;
+  overflow: hidden;
+  border: 1px solid #6b7f8e;
+  border-radius: 7px;
+  height: 87vh;
+}
+
+.skills .container .sContent {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills .container h5 {
+  font-family: 'Merriweather', serif;
+  background-color: #6b7f8e;
+  color: white;
+  text-align: center;
+  mix-blend-mode: multiply;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.skills .container .pSkill, .skills .container .kSkill, .skills .container .cSkill {
+  text-align: center;
+}
+
+.skills .container svg {
+  width: 60px;
+  padding: 10px;
+  margin: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
 }
 
 @-webkit-keyframes drop {

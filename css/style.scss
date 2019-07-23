@@ -163,7 +163,7 @@ header{
         display: flex;
         justify-content: space-around;
         .text{
-            width: 40%;
+           
             p{
                 font-family: 'Merriweather', serif;
                 color: color(primary);
@@ -175,9 +175,12 @@ header{
           
         }
         .image{
-            width: 50%;
             img{
                 width: 100%;
+                
+            }
+            .image2{
+                display: none;
             }
         }
 
@@ -185,6 +188,48 @@ header{
 
 }
 
+.skills{
+    background-image: url(../img/skillbg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    height: 100vh;
+    position: relative;
+
+    .container{
+        width: 95%;
+        overflow: hidden;
+        border: 1px solid color(accent);
+        border-radius: 7px;
+        height: 87vh;
+        
+        .sContent{
+            padding-top: 10px;
+            display: flex;
+        }
+        h5{
+            font-family: 'Merriweather', serif;
+            background-color:color(accent);
+            color: white;
+            text-align: center;
+            mix-blend-mode: multiply;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .pSkill, .kSkill, .cSkill{
+            text-align: center;
+           
+        }
+        svg{
+            width: 60px;
+            padding: 10px;
+            margin: 15px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+        }
+    }
+}
 
 @keyframes drop{
     0%{ transform: translateX(100%);
