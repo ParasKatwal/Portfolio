@@ -10,7 +10,6 @@
     .about .about-me{
         flex-direction: column;
         justify-content: center;
-        text-align: center;
         padding: 5px 0;
     }
     .about .title{
@@ -19,11 +18,14 @@
     .about .about-me .text, .about .about-me .image{
         width: 100%;
     }
+    .about .about-me .image{
+        text-align: center;
+    }
     .about .about-me .text h2{
         font-size: 35px;
     }
-    .about .about-me .text p{
-        padding: 7px 0;
+    .about .about-me .text .pg{
+        padding: 8px 0;
     }
     .about .about-me .image img{
         width: 55%;
@@ -80,16 +82,17 @@
     } 
     .project-one .project-details{
         flex-direction: column;
-        padding-top: 5px;
+        padding: 5px 20px;
     }
     .project-one .project-details .pIntro{
         width: 100%;
         padding-top: 0px;
-        text-align: center;
+    }
+    .project-one .project-details .pIntro .pg{
+        padding-top: 0px;
     }
     .project-one .project-details .pIntro p{
         padding-top: 0px;
-        padding-bottom: 15px;
     }
     .project-one .project-details .pDemo{
         width: 100%;

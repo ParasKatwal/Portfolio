@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700,700i&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -186,6 +186,7 @@ header nav.open {
   padding: 10px;
   font-family: 'Merriweather', serif;
   color: #6b7f8e;
+  font-style: italic;
 }
 
 .about .about-me {
@@ -195,15 +196,32 @@ header nav.open {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.about .about-me .text p {
   font-family: 'Merriweather', serif;
   color: #050E22;
   word-spacing: 3px;
   letter-spacing: 1px;
-  font-weight: lighter;
+}
+
+.about .about-me .text h2 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.about .about-me .text .pg {
   padding-top: 30px;
+}
+
+.about .about-me .text p {
+  font-weight: lighter;
+  width: 75%;
+  float: right;
+}
+
+.about .about-me .text .line1 {
+  border: 2px solid black;
+  width: 20%;
+  float: left;
+  margin-top: 8px;
 }
 
 .about .about-me .image img {
@@ -286,6 +304,7 @@ header nav.open {
   padding: 10px;
   font-family: 'Merriweather', serif;
   color: #6b7f8e;
+  font-style: italic;
 }
 
 .project-one .project-details {
@@ -295,6 +314,10 @@ header nav.open {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  font-family: 'Merriweather', serif;
+  color: #050E22;
+  word-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 .project-one .project-details .pIntro {
@@ -303,22 +326,31 @@ header nav.open {
 }
 
 .project-one .project-details .pIntro h2 {
-  color: #050E22;
-  letter-spacing: 1px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .project-one .project-details .pIntro p {
-  font-family: 'Merriweather', serif;
-  color: #050E22;
-  word-spacing: 3px;
-  letter-spacing: 1px;
   font-weight: lighter;
-  padding-top: 30px;
+  padding: 4px;
+  width: 75%;
+  float: right;
 }
 
 .project-one .project-details .pIntro a {
   color: #050E22;
   border-bottom: 1px solid #050E22;
+}
+
+.project-one .project-details .pIntro .pg {
+  padding-top: 30px;
+}
+
+.project-one .project-details .pIntro .line1 {
+  border: 2px solid black;
+  width: 20%;
+  float: left;
+  margin-top: 11px;
 }
 
 .project-one .project-details .pDemo {

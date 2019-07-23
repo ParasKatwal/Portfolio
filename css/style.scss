@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,700i&display=swap');
 
 $color:(
     primary: #050E22,
@@ -157,34 +157,48 @@ header{
             padding: 10px;
             font-family: 'Merriweather', serif;
             color: color(accent);
+            font-style: italic;
         }
     }
     .about-me{
         padding-top: 50px;
         display: flex;
         justify-content: space-around;
+        font-family: 'Merriweather', serif;
+        color: color(primary);
+        word-spacing: 3px;
+        letter-spacing: 1px;
+
         .text{
-           
-            p{
-                font-family: 'Merriweather', serif;
-                color: color(primary);
-                word-spacing: 3px;
-                letter-spacing: 1px;
-                font-weight: lighter;
+
+            h2{
+                font-weight: bold;
+                font-style: italic;
+            }
+            .pg{
                 padding-top: 30px;
+            }
+            p{
+                font-weight: lighter;
+                width: 75%;
+                float: right;
+            }
+            .line1{
+                border: 2px solid black;
+                width: 20%;
+                float: left;
+                margin-top: 8px;
             }
           
         }
         .image{
             img{
                 width: 100%;
-                
             }
             .image2{
                 display: none;
             }
         }
-
     }
 
 }
@@ -254,6 +268,7 @@ header{
             padding: 10px;
             font-family: 'Merriweather', serif;
             color: color(accent);
+            font-style: italic;
         }
     }
     
@@ -261,25 +276,36 @@ header{
         padding-top: 50px;
         display: flex;
         justify-content: space-around;
+        font-family: 'Merriweather', serif;
+        color: color(primary);
+        word-spacing: 3px;
+        letter-spacing: 1px;
         
         .pIntro{
             width: 30%;
             padding-top: 50px;
             h2{
-                color: color(primary);
-                letter-spacing: 1px;
+                font-weight: bold;
+                font-style: italic;
             }
             p{
-                font-family: 'Merriweather', serif;
-                color: color(primary);
-                word-spacing: 3px;
-                letter-spacing: 1px;
                 font-weight: lighter;
-                padding-top: 30px;
+                padding: 4px;
+                width: 75%;
+                float: right
             }
             a{
                 color: #050E22;
                 border-bottom: 1px solid #050E22;
+            }
+            .pg{
+                padding-top: 30px;
+            }
+            .line1{
+                border: 2px solid black;
+                width: 20%;
+                float: left;
+                margin-top: 11px;
             }
         }
 
