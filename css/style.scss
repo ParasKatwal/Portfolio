@@ -23,6 +23,20 @@ header{
     height: 100vh;
     position: relative;
 
+    .updated{
+        position: absolute;
+        color: color(accent);
+        font-family: 'Merriweather', serif;
+        right: 90px;
+        top: 40px;
+
+        h6{
+            font-size: 12px;
+            font-style: italic;
+            font-weight: lighter;
+        }
+    }
+
     .hamburger-menu{
         position: fixed;
         top: 20px;
@@ -246,10 +260,11 @@ header{
     }
 }
 
-.project-one{
+.project-one, .project{
     padding: 40px;
     height: 100vh;
     position: relative;
+    font-family: 'Merriweather', serif;
     // background: rgba(107, 127, 142, .1);
     .container{
         width: 95%;
@@ -259,14 +274,13 @@ header{
         overflow: hidden;
     }
 
-    .project{
+    .project-title{
         position: absolute;
         top: 2px;
         left: 130px;
         background: white;
         h5{
             padding: 10px;
-            font-family: 'Merriweather', serif;
             color: color(accent);
             font-style: italic;
         }
@@ -276,14 +290,13 @@ header{
         padding-top: 50px;
         display: flex;
         justify-content: space-around;
-        font-family: 'Merriweather', serif;
         color: color(primary);
         word-spacing: 3px;
         letter-spacing: 1px;
         
         .pIntro{
             width: 30%;
-            padding-top: 50px;
+            padding-top: 70px;
             h2{
                 font-weight: bold;
                 font-style: italic;
@@ -296,7 +309,7 @@ header{
             }
             a{
                 color: #050E22;
-                border-bottom: 1px solid #050E22;
+                font-style: italic;
             }
             .pg{
                 padding-top: 30px;
@@ -308,7 +321,6 @@ header{
                 margin-top: 11px;
             }
         }
-
         .pDemo{
             width: 50%;
             background-position: top;
@@ -323,6 +335,107 @@ header{
         }
         .image:hover{
             background-position: bottom;
+        }
+    }
+}
+
+.project-two{
+
+    .project-title{
+        h5{
+            padding: 10px;
+        }
+    }
+    
+    .project-details{
+        padding-top: 50px;
+        
+        .pIntro{
+            padding-top: 30px;
+    
+            p{
+                padding: 4px;
+            }
+            .pg{
+                padding-top: 30px;
+            }
+        }
+
+        .image{
+            background: url(../img/eyecare.png);
+            background-size: cover;
+        }
+    }
+}
+
+.project-three{
+
+    .project-details{
+        .image{
+            background: url(../img/cyber.png);
+            background-size: cover;
+        }
+    }
+}
+
+.contact{
+    background: url(../img/c.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+    font-family: 'Merriweather', serif;
+
+    h2{
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: color(accent);
+    }
+
+    .container{
+        width: 95%;
+        border: 1px solid color(accent);
+        border-radius: 7px;
+        // background: rgba(5, 14, 34, .3);
+        // background: linear-gradient( rgba(5, 14, 34, .1), rgba(5, 14, 34, .6),rgba(5, 14, 34, .1));
+        height: 87vh;
+        overflow: hidden;
+    }
+
+    .content-box{
+        display: flex;
+        justify-content: flex-end;
+
+        .cText{
+            width: 50%;
+            text-align: right;
+            padding: 20px;
+            margin-top: 30px;
+    
+            p{
+                padding: 10px;
+                font-size: 18px;
+            }
+            i{
+                font-size: 20px;
+            }
+        }
+
+        .contact-form{
+            width: 50%;
+    
+            form{
+                border-left: 1px solid color(accent);
+                padding: 30px;
+                
+                .btn{
+                    width: 50%;
+                    margin-left: 30%;
+                    background: color(primary) !important;
+                }
+            }
         }
     }
 }

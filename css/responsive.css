@@ -30,8 +30,11 @@
     .about .about-me .image img{
         width: 55%;
     }
-    .project-one .project-details .pIntro h2{
+    .project .project-details .pIntro h2, .project-two .project-details .pIntro h2{
         font-size: 38px;
+    }
+    .project-two .project-details{
+        padding-top: 10px;
     }
     
 }
@@ -61,12 +64,39 @@
     .about .about-me .image img{
         width: 75%;
     }
-    .project-one .project-details .pIntro h2{
+    .project .project-details .pIntro h2, .project-two .project-details .pIntro h2{
         font-size: 30px;
     }
-    .project-one .project-details .pIntro{
+    .project .project-details .pIntro{
         padding-top: 20px;
     }
+    .project-two .project-details .pIntro .pg{
+        padding-top: 0px;
+    }
+    .contact .content-box{
+        flex-direction: column;
+    }
+    .contact .content-box .cText{
+        width: 100%;
+        margin-top: 0;
+        padding: 0px;
+        text-align: center;
+    }
+    .contact .content-box .cText p{
+       padding: 5px;
+       font-size: 15px;
+    }
+    .contact .content-box .contact-form{
+        width: 100%;
+    }
+    .contact .content-box .contact-form form{
+        padding: 10px;
+        border: none;
+    }
+    .contact h2{
+        font-size: 35px;
+    }
+    
 }
 
 @media (max-width: 750px){
@@ -80,21 +110,21 @@
     header{
         background-position: 50% 25%;
     } 
-    .project-one .project-details{
+    .project .project-details, .project-two .project-details{
         flex-direction: column;
         padding: 5px 20px;
     }
-    .project-one .project-details .pIntro{
+    .project .project-details .pIntro, .project-two .project-details .pIntro{
         width: 100%;
         padding-top: 0px;
     }
-    .project-one .project-details .pIntro .pg{
+    .project .project-details .pIntro .pg, .project-two .project-details .pIntro .pg{
         padding-top: 0px;
     }
-    .project-one .project-details .pIntro p{
+    .project .project-details .pIntro p, .project-two .project-details .pIntro p{
         padding-top: 0px;
     }
-    .project-one .project-details .pDemo{
+    .project .project-details .pDemo, .project-two .project-details .pDemo{
         width: 100%;
         height: 30vh;
     }   
@@ -109,11 +139,15 @@
         width: 100vw;
         height: 100vh;
     }
+    header .updated{
+        right: 80px;
+        top: 10px;
+    }
     header nav ul a{
         font-size: 30px;
     }
     header nav .social-media{
-        width: 90%;
+        width: 80%;
         margin-top: 30%;
     }
     .skills .container svg{

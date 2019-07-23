@@ -14,6 +14,20 @@ header {
   position: relative;
 }
 
+header .updated {
+  position: absolute;
+  color: #6b7f8e;
+  font-family: 'Merriweather', serif;
+  right: 90px;
+  top: 40px;
+}
+
+header .updated h6 {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
 header .hamburger-menu {
   position: fixed;
   top: 20px;
@@ -279,13 +293,14 @@ header nav.open {
   border-radius: 50%;
 }
 
-.project-one {
+.project-one, .project {
   padding: 40px;
   height: 100vh;
   position: relative;
+  font-family: 'Merriweather', serif;
 }
 
-.project-one .container {
+.project-one .container, .project .container {
   width: 95%;
   border: 1px solid #6b7f8e;
   border-radius: 7px;
@@ -293,67 +308,65 @@ header nav.open {
   overflow: hidden;
 }
 
-.project-one .project {
+.project-one .project-title, .project .project-title {
   position: absolute;
   top: 2px;
   left: 130px;
   background: white;
 }
 
-.project-one .project h5 {
+.project-one .project-title h5, .project .project-title h5 {
   padding: 10px;
-  font-family: 'Merriweather', serif;
   color: #6b7f8e;
   font-style: italic;
 }
 
-.project-one .project-details {
+.project-one .project-details, .project .project-details {
   padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-family: 'Merriweather', serif;
   color: #050E22;
   word-spacing: 3px;
   letter-spacing: 1px;
 }
 
-.project-one .project-details .pIntro {
+.project-one .project-details .pIntro, .project .project-details .pIntro {
   width: 30%;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
-.project-one .project-details .pIntro h2 {
+.project-one .project-details .pIntro h2, .project .project-details .pIntro h2 {
   font-weight: bold;
   font-style: italic;
 }
 
-.project-one .project-details .pIntro p {
+.project-one .project-details .pIntro p, .project .project-details .pIntro p {
   font-weight: lighter;
   padding: 4px;
   width: 75%;
   float: right;
 }
 
-.project-one .project-details .pIntro a {
+.project-one .project-details .pIntro a, .project .project-details .pIntro a {
   color: #050E22;
-  border-bottom: 1px solid #050E22;
+  font-style: italic;
 }
 
-.project-one .project-details .pIntro .pg {
+.project-one .project-details .pIntro .pg, .project .project-details .pIntro .pg {
   padding-top: 30px;
 }
 
-.project-one .project-details .pIntro .line1 {
+.project-one .project-details .pIntro .line1, .project .project-details .pIntro .line1 {
   border: 2px solid black;
   width: 20%;
   float: left;
   margin-top: 11px;
 }
 
-.project-one .project-details .pDemo {
+.project-one .project-details .pDemo, .project .project-details .pDemo {
   width: 50%;
   background-position: top;
   -webkit-transition: ease-in-out 5s;
@@ -362,13 +375,108 @@ header nav.open {
   border-radius: 10px;
 }
 
-.project-one .project-details .image {
+.project-one .project-details .image, .project .project-details .image {
   background: url(../img/bhanshaghar.png);
   background-size: cover;
 }
 
-.project-one .project-details .image:hover {
+.project-one .project-details .image:hover, .project .project-details .image:hover {
   background-position: bottom;
+}
+
+.project-two .project-title h5 {
+  padding: 10px;
+}
+
+.project-two .project-details {
+  padding-top: 50px;
+}
+
+.project-two .project-details .pIntro {
+  padding-top: 30px;
+}
+
+.project-two .project-details .pIntro p {
+  padding: 4px;
+}
+
+.project-two .project-details .pIntro .pg {
+  padding-top: 30px;
+}
+
+.project-two .project-details .image {
+  background: url(../img/eyecare.png);
+  background-size: cover;
+}
+
+.project-three .project-details .image {
+  background: url(../img/cyber.png);
+  background-size: cover;
+}
+
+.contact {
+  background: url(../img/c.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px;
+  font-family: 'Merriweather', serif;
+}
+
+.contact h2 {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color: #6b7f8e;
+}
+
+.contact .container {
+  width: 95%;
+  border: 1px solid #6b7f8e;
+  border-radius: 7px;
+  height: 87vh;
+  overflow: hidden;
+}
+
+.contact .content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact .content-box .cText {
+  width: 50%;
+  text-align: right;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.contact .content-box .cText p {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.contact .content-box .cText i {
+  font-size: 20px;
+}
+
+.contact .content-box .contact-form {
+  width: 50%;
+}
+
+.contact .content-box .contact-form form {
+  border-left: 1px solid #6b7f8e;
+  padding: 30px;
+}
+
+.contact .content-box .contact-form form .btn {
+  width: 50%;
+  margin-left: 30%;
+  background: #050E22 !important;
 }
 
 @-webkit-keyframes drop {
