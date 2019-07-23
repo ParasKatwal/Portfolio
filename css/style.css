@@ -185,7 +185,7 @@ header nav.open {
 .about .title h5 {
   padding: 10px;
   font-family: 'Merriweather', serif;
-  color: #050E22;
+  color: #6b7f8e;
 }
 
 .about .about-me {
@@ -259,6 +259,84 @@ header nav.open {
   margin: 15px;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 50%;
+}
+
+.project-one {
+  padding: 40px;
+  height: 100vh;
+  position: relative;
+}
+
+.project-one .container {
+  width: 95%;
+  border: 1px solid #6b7f8e;
+  border-radius: 7px;
+  height: 87vh;
+  overflow: hidden;
+}
+
+.project-one .project {
+  position: absolute;
+  top: 2px;
+  left: 130px;
+  background: white;
+}
+
+.project-one .project h5 {
+  padding: 10px;
+  font-family: 'Merriweather', serif;
+  color: #6b7f8e;
+}
+
+.project-one .project-details {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.project-one .project-details .pIntro {
+  width: 30%;
+  padding-top: 50px;
+}
+
+.project-one .project-details .pIntro h2 {
+  color: #050E22;
+  letter-spacing: 1px;
+}
+
+.project-one .project-details .pIntro p {
+  font-family: 'Merriweather', serif;
+  color: #050E22;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  padding-top: 30px;
+}
+
+.project-one .project-details .pIntro a {
+  color: #050E22;
+  border-bottom: 1px solid #050E22;
+}
+
+.project-one .project-details .pDemo {
+  width: 50%;
+  background-position: top;
+  -webkit-transition: ease-in-out 5s;
+  transition: ease-in-out 5s;
+  border: 5px solid rgba(5, 14, 34, 0.5);
+  border-radius: 10px;
+}
+
+.project-one .project-details .image {
+  background: url(../img/bhanshaghar.png);
+  background-size: cover;
+}
+
+.project-one .project-details .image:hover {
+  background-position: bottom;
 }
 
 @-webkit-keyframes drop {

@@ -14,6 +14,7 @@ $color:(
     padding: 0;
     margin: 0;
 }
+
 header{
     background-image: url(../img/port1.png);
     background-repeat: no-repeat;
@@ -155,7 +156,7 @@ header{
         h5{
             padding: 10px;
             font-family: 'Merriweather', serif;
-            color: color(primary);
+            color: color(accent);
         }
     }
     .about-me{
@@ -227,6 +228,75 @@ header{
             margin: 15px;
             background: rgba(0, 0, 0, 0.2);
             border-radius: 50%;
+        }
+    }
+}
+
+.project-one{
+    padding: 40px;
+    height: 100vh;
+    position: relative;
+    // background: rgba(107, 127, 142, .1);
+    .container{
+        width: 95%;
+        border: 1px solid color(accent);
+        border-radius: 7px;
+        height: 87vh;
+        overflow: hidden;
+    }
+
+    .project{
+        position: absolute;
+        top: 2px;
+        left: 130px;
+        background: white;
+        h5{
+            padding: 10px;
+            font-family: 'Merriweather', serif;
+            color: color(accent);
+        }
+    }
+    
+    .project-details{
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        
+        .pIntro{
+            width: 30%;
+            padding-top: 50px;
+            h2{
+                color: color(primary);
+                letter-spacing: 1px;
+            }
+            p{
+                font-family: 'Merriweather', serif;
+                color: color(primary);
+                word-spacing: 3px;
+                letter-spacing: 1px;
+                font-weight: lighter;
+                padding-top: 30px;
+            }
+            a{
+                color: #050E22;
+                border-bottom: 1px solid #050E22;
+            }
+        }
+
+        .pDemo{
+            width: 50%;
+            background-position: top;
+            transition: ease-in-out 5s;
+            border: 5px solid rgba(5, 14, 34, 0.5);
+            border-radius: 10px;
+            
+        }
+        .image{
+            background: url(../img/bhanshaghar.png);
+            background-size: cover;
+        }
+        .image:hover{
+            background-position: bottom;
         }
     }
 }
