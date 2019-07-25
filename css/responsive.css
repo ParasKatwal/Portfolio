@@ -4,7 +4,7 @@
 }
 
 @media (max-width: 1050px){
-    header{
+    header::before{
         background-position: 60%;
     }
     .about .about-me{
@@ -40,7 +40,7 @@
 }
 
 @media (max-width: 800px){
-    header{
+    header::before{
         background-image: url(../img/port3.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -100,14 +100,14 @@
 }
 
 @media (max-width: 750px){
-    header{
+    header::before{
         background-position: 50% 60%;
     }    
 }
 
 
 @media (max-width: 700px){
-    header{
+    header::before{
         background-position: 50% 25%;
     } 
     .project .project-details, .project-two .project-details{
@@ -131,7 +131,7 @@
 }
 
 @media (max-width: 500px){
-    header{
+    header::before{
         background-image: url(../img/port2.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -147,6 +147,13 @@
         font-size: 30px;
     }
     header nav .social-media{
+        width: 50%;
+        margin-top: 30%;
+    }
+    header nav .social-media i{
+        padding: 5px;
+    }
+    header nav .social-media{
         width: 80%;
         margin-top: 30%;
     }
@@ -155,6 +162,9 @@
     }
     .about .about-me .image img{
         width: 100%;
+    }
+    .project-four .project-title{
+        left: 100px;
     }
 }
 

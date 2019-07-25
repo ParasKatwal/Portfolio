@@ -6,10 +6,6 @@
 }
 
 header {
-  background-image: url(../img/port1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 100vh;
   position: relative;
 }
@@ -173,6 +169,24 @@ header nav.open {
           transform: scale(1);
   -webkit-animation: drop 1s ease forwards;
           animation: drop 1s ease forwards;
+}
+
+header:before {
+  -webkit-animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+  animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+  background-image: url(../img/port1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .about {
@@ -414,6 +428,11 @@ header nav.open {
   background-size: cover;
 }
 
+.project-four .project-details .image {
+  background: url(../img/ryu.png);
+  background-size: cover;
+}
+
 .contact {
   background: url(../img/c.jpg);
   height: 100vh;
@@ -492,6 +511,19 @@ header nav.open {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
