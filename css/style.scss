@@ -10,6 +10,11 @@ $color:(
     @return map-get($map: $color, $key: $colorName )
 }
 
+.js-loading *, .js-loading *:before, .js-loading *:after {
+    -webkit-animation-play-state: paused !important;
+            animation-play-state: paused !important;
+}
+  
 *{
     padding: 0;
     margin: 0;
